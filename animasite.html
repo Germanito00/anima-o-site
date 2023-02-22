@@ -9,7 +9,39 @@
         body
         {
             background-image: url(Background.png);
+            background-size: 100%;
+            
         }
+            .dis
+                {
+                position: absolute;
+                bottom: 0%;
+                left: 0px;
+                animation: dis 6s infinite alternate;
+                }
+             @keyframes dis
+        {
+            0% { rotate: 0deg; width: 10%; left: 90%;}
+            
+            100% { rotate: 0deg; width: 10%; left:0%}
+            
+        }
+            .dis2
+            {
+                position: absolute;
+                top: 0%;
+                left: 0px;
+                animation: dis2 6s infinite alternate;
+            }
+            @keyframes dis2
+        { 
+            0% { rotate: 0deg; width: 10%; left: 0%;}
+            
+            100% { rotate: 0deg; width: 10%; left: 90%;}
+            
+        }
+
+        @media screen and (max-width: 769px)  {
             .dis
                 {
                 position: absolute;
@@ -38,13 +70,19 @@
             100% { rotate: 0deg; width: 30%; left: 70%;}
             
         }
+        }
     </style>
 </head>
 <body>
     
     <img src="dis.png" class="dis">
-    <img src="dis.png" class="dis2">
+    
+    <div class="texto">
+        Floppy Arch
+        
+    </div>
 
+    <img src="dis.png" class="dis2">
 
 </body>
 </html>
