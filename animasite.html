@@ -1,85 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body
-        {
-            background-image: url(Background.png);
-            background-size: 100%;
-            
-        }
-            .dis
-                {
-                position: absolute;
-                bottom: 0%;
-                left: 0px;
-                animation: dis 6s infinite alternate;
-                }
-             @keyframes dis
-        {
-            0% { rotate: 0deg; width: 10%; left: 90%;}
-            
-            100% { rotate: 0deg; width: 10%; left:0%}
-            
-        }
-            .dis2
-            {
-                position: absolute;
-                top: 0%;
-                left: 0px;
-                animation: dis2 6s infinite alternate;
-            }
-            @keyframes dis2
-        { 
-            0% { rotate: 0deg; width: 10%; left: 0%;}
-            
-            100% { rotate: 0deg; width: 10%; left: 90%;}
-            
-        }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-        @media screen and (max-width: 769px)  {
-            .dis
-                {
-                position: absolute;
-                bottom: 0%;
-                left: 0px;
-                animation: dis 6s infinite alternate;
-                }
-             @keyframes dis
-        {
-            0% { rotate: 0deg; width: 30%; left: 70%;}
-            
-            100% { rotate: 0deg; width: 30%; left:0%}
-            
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+  <style>
+    body {
+      background-image: url(Background.png);
+      background-size: 100%;
+      overflow: hidden;
+    }
+    
+    .dis {
+      position: absolute;
+      display: flex;
+      bottom: 5000px;
+      left: 0px;
+      animation: dis 3s alternate ;
+    }
+    
+    @keyframes dis {
+      0% {
+        rotate: 0deg;
+        width: 10%;
+        top: 5%;
+      } 
+      100% {
+        rotate: 0deg;
+        width: 10%;
+        top:-20%;
+      }
+    }
+    
+    .dis2 {
+      position: absolute;
+      display: flex;
+      bottom: 5000px;
+      left: 0px;
+      animation: dis2 3s alternate;
+    }
+    
+    @keyframes dis2 {
+        0% {
+        rotate: 0deg;
+        left: 90%;
+        width: 10%;
+        top: 80%;
+      }
+      100% {
+        rotate: 0deg;
+        width: 10%;
+        top:100%;
+        left: 90%;
+      }
+    }
+    
+    @media screen and (max-width: 769px) {
+      .dis {
+        position: absolute;
+        bottom: 0%;
+        left: 0px;
+        animation: dis 3s infinite alternate;
+      }
+      
+      @keyframes dis {
+        0% {
+          rotate: 0deg;
+          width: 30%;
+          left: 70%;
         }
-            .dis2
-            {
-                position: absolute;
-                top: 0%;
-                left: 0px;
-                animation: dis2 6s infinite alternate;
-            }
-            @keyframes dis2
-        { 
-            0% { rotate: 0deg; width: 30%; left: 0%;}
-            
-            100% { rotate: 0deg; width: 30%; left: 70%;}
-            
+        
+        100% {
+          rotate: 0deg;
+          width: 30%;
+          left: 0%;
         }
+      }
+      
+      .dis2 {
+        position: absolute;
+        top: 0%;
+        left: 0px;
+        animation: dis2 3s infinite alternate;
+      }
+      
+      @keyframes dis2 {
+        0% {
+          rotate: 0deg;
+          width: 30%;
+          left: 0%;
         }
-    </style>
+        
+        100% {
+          rotate: 0deg;
+          width: 30%;
+          left: 70%;
+        }
+      }
+    }
+    
+    .texto {
+    
+    width: 100%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    font-size: 60px;
+    color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 20px 10px 10px 10px black;
+    }
+
+    .texto2{
+        justify-content: center;
+        top: 100%;
+        width: 100%;
+        font-size: 60px;
+        color: yellow;
+        font-family: 'Times New Roman', Times, serif;
+        animation: flip 3s infinite;
+        display: flex;
+
+    }
+    
+
+  
+    
+  </style>
 </head>
 <body>
     
     <img src="dis.png" class="dis">
     
     <div class="texto">
-        Floppy Arch
-        
+        Floppy Arch <br>
+    </div>
+
+    <div class="texto2">
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>.................Carregando.....................
     </div>
 
     <img src="dis.png" class="dis2">
